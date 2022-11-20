@@ -1,0 +1,46 @@
+<div class="container">
+  <div>
+    <div>
+      <h1>Guess the Square Root!</h1>
+    </div>
+
+    <div>
+      <label>Guess the square root of: </label>
+      <input type="text" [(ngModel)]="target" />
+
+      <label>&nbsp;within&nbsp;</label>
+
+      <input type="text" [(ngModel)]="accuracy" />
+      <label>&nbsp;%</label>
+    </div>
+
+    <div>
+      <p>
+        <button (click)="randomNumber()">Generate a random number</button>
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div>
+    <div>
+      <div *ngFor="let feedback of feedbacks">{{ feedback }}</div>
+      <div *ngIf="try">{{ try }}</div>
+    </div>
+
+    <div *ngIf="userPlay">
+      <label>Enter your guess: </label>
+      <input
+        type="text"
+        [(ngModel)]="guess"
+        placeholder="Your guess..."
+        (keyup.enter)="submit()"
+      />
+    </div>
+
+    <div *ngIf="userRestart">
+      <button (click)="restart()">Try again?</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.container {}
+
+header {
+  background-color: #FAF9F6;
+}
+
+.title {
+  text-align: center;
+  color: maroon;
+}
+
+.setting {}
+
+.subtitle {
+  font-weight: bold;
+}
+
+#name {
+  font-weight: bold;
+}
+
+.chat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {}
+
+#date {
+  font-weight: lighter;
+  font-size: small;
+  align-self: center;
+}
+
+#type-message-title {
+  font-weight: bold;
+}
+
+#message-input {
+  width: 25%;
+}
+
+::placeholder {
+  font-style: italic;
+}
