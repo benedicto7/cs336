@@ -1,4 +1,4 @@
-# Calvin Chat App、
+# Calvin Chat App
 https://calvin-cs336-chat.web.app/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
