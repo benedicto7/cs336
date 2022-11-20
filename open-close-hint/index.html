@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CS336-HW3</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <body>
+    <!-- Overview -->
+    <div>
+      <h1>CS336-Homework 3</h1>
+      <h3>Goals:</h3>
+      <ul>
+        <li>Link (button/anchor) to a hint</li>
+        <li>OnClick opens the hint (text)</li>
+        <li>OnClick hide/close hint</li>
+      </ul>
+    </div>
+
+    <!-- Hint -->
+    <div>
+      <h3>First way to create</h3>
+      <button id="hint-button-1" onclick="hint()">
+        Click here to open hint
+      </button>
+      <p id="hint-text-1" style="display: none">
+        In order to create a button that shows a hidden text, <br />
+        we must create an empty string in the p tag. <br />
+        Then we must use the onclick function and document.getElementById()
+        <br />
+        to create an event that both shows and hide the text.
+      </p>
+
+      <h3>There is also another way to create a hint button</h3>
+      <button id="hint-button-2" onclick="anotherHint()" value="false">
+        Click here to open hint
+      </button>
+      <p id="hint-text-2"></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chat-app-abdc3": {
+      "hosting": {
+        "chat-app": [
+          "calvin-cs336-chat"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chat-app-abdc3"
+  }
+}

@@ -1,0 +1,101 @@
+/* To help check each elements width and height */
+* {
+  /* border: 1px solid red; */
+}
+
+/* Displays the card in a grid format */
+.card {
+  display: grid;
+  row-gap: 10%;
+  column-gap: 1%;
+  grid-template-columns: 10% 10% 10%;
+  /* white-space: nowrap;
+  width: min-content;
+  align-content: space-between; */
+}
+
+/* Makes the element span across 2 horizontally from column 2 to 3 */
+.grid-col-span-2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+/* Makes the element span across 3 horizontally */
+.grid-col-span-3 {
+  grid-column: span 3;
+}
+
+/* Makes the element span across 3 vertically */
+.grid-row-span-3 {
+  grid-row: span 3;
+}
+
+.logo-div {
+
+}
+
+/* Style title */
+.title {
+  font-weight: bold;
+  width: 100%;
+  font-size: 3vw;
+}
+
+/* Style subtitle */
+.subtitle {
+  opacity: 0.4;
+  font-size: 2vw;
+}
+
+/* Style image */
+.logo {
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1%;
+  border-radius: 10%;
+}
+
+/* Style button */
+.find-more-btn {
+  background-color: green;
+  color: white;
+}
+
+/* Button change color when mouse hover */
+.find-more-btn:hover {
+  background-color: grey;
+}
+
+/* Makes element have border shadow */
+.shadowed {
+  box-shadow: 5px 5px 5px 0px grey;
+}
+
+/* When user minimizes height */
+@media screen and (max-height: 115px) {
+  .card {
+    grid-template-rows: 22vh 22vh 22vh;
+    row-gap: 7vh;
+  }
+
+  .title {
+    font-size: 20vh;
+  }
+
+  .subtitle {
+    font-size: 15vh;
+  }
+
+  .find-more-btn {
+    font-size: 1vh;
+    width: 150vh;
+  }
+}
+
+/* When user minimizes width */
+@media screen and (max-width: 500px) {
+  .card {
+    grid-template-columns: 10vw 10vw 10vw;
+  }
+}
