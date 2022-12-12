@@ -1,0 +1,12 @@
+<h2>Student List</h2>
+
+<div *ngFor="let student of studentList">
+  <button (click)="selectStudent(student)">
+    Name: {{student.name}}
+  </button>
+  <div *ngIf="student.grade">{{student.grade}}</div>
+  <p></p>
+</div>
+
+<app-student-detail [student]="selectedStudent" (gradeToEmit)="recordGrade($event)"></app-student-detail>
+

@@ -1,0 +1,10 @@
+<div *ngIf="student" class="container">
+  <p>Name: {{ student.name }}</p>
+  <p>Id: {{ student.id }}</p>
+  <p>Major: {{ student.major }}</p>
+
+  Grade:
+  <input type="text" [(ngModel)]="grade" />
+
+  <button (click)="onClose()">Close</button>
+</div>
